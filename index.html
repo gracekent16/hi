@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎸 Rocknonym! — Points Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎸 Rocknonym! — Points Edition</h1>
+  <h2>Earn points. Decode rock. Trade brainpower for hints.</h2>
+
+  <div class="puzzle-box">
+    <h2 id="puzzle-number">🤘 ROCKNONYM #1 🤘</h2>
+    <p id="puzzle-prompt">🧩 Unscramble this classic rock band name:</p>
+    <p><strong id="puzzle-text">"Oily Hand Nods"</strong></p>
+    <div class="input-area">
+      <input type="text" id="guess" placeholder="Enter your guess" />
+      <button onclick="submitGuess()">Submit</button>
+      <button onclick="requestHint()">Hint</button>
+    </div>
+    <div class="feedback" id="feedback"></div>
+    <div class="hint" id="hint"></div>
+    <div class="score" id="score">Points: 3</div>
+  </div>
+
+  <div class="shop">
+    <h3>🪙 Point Shop</h3>
+    <p>🎵 “Reveal the Band Name” (5 pts)</p>
+    <p>🎤 “Artist or Band” (3 pts)</p>
+    <p>📆 “Song Release Date Hint” (2 pts)</p>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
